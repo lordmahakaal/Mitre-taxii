@@ -30,30 +30,29 @@ try:
     sink.save_data(collection_source)
     logging.info("TAXII data fetched and stored successfully.")
 except Exception as e:
-    logging.error("Failed to fetch and store TAXII data: %s", str(e))
+    logging.error("Failed to fetch and store TAXII data: %s", str(e)
 
 # Initialize a FileSystemSource to access the locally stored data
 STIX_SOURCE_DIRECTORY = "/path/to/stix"
 source = FileSystemSource(STIX_SOURCE_DIRECTORY)
 
 # Load network logs into a pandas DataFrame
-def read_network_logs(log_file):
-    log_data = []
-    try:
-        with open(log_file, 'r') as file:
-            for line in file:
-                parts = line.split()  # Split the log entry by whitespace
-                if len(parts) >= 3:
-                    timestamp = parts[0]
-                    log_level = parts[1]
-                    message = ' '.join(parts[2:])
-                    log_data.append({'Timestamp': timestamp, 'Log_Level': log_level, 'Message': message})
-        logging.info("Network logs loaded successfully.")
-    except FileNotFoundError:
-        logging.error("Network log file not found.")
-    return pd.DataFrame(log_data)
+log_data = []
 
-network_logs = read_network_logs(NETWORK_LOG_FILE)
+try:
+    with open(NETWORK_LOG_FILE, 'r') as file:
+        for line in file:
+            parts = line.split()  # Split the log entry by whitespace
+            if len(parts) >= 3:
+                timestamp = parts[0]
+                log_level = parts[1]
+                message = ' '.join(parts[2:])
+                log_data.append({'Timestamp': timestamp, 'Log_Level': log_level, 'Message': message})
+    logging.info("Network logs loaded successfully.")
+except FileNotFoundError:
+    logging.error("Network log file not found.")
+
+network_logs = pd.DataFrame(log_data)
 
 # Set up your OpenAI API key
 openai.api_key = OPENAI_API_KEY
