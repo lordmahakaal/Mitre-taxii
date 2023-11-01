@@ -19,7 +19,7 @@ def initialize_stix_sink(directory):
         sink = FileSystemSink(directory)
         return sink
     except Exception as e:
-        logging.error("Failed to initialize STIX sink: %s", str(e)
+        logging.error("Failed to initialize STIX sink: %s", str(e))
         return None
 
 sink = initialize_stix_sink(STIX_SINK_DIRECTORY)
