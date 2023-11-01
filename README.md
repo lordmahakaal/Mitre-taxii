@@ -41,16 +41,6 @@ Usage:
 
 
 
-Governance:
-This GitHub public repository (https://github.com/lordmahakaal/Mitre-taxii)) was created in line with the OASIS Cyber Threat Intelligence (CTI) TC as an OASIS TC Open Repository to support open source resources related to Technical Committee work. While it is associated with the sponsor TC, its development priorities, leadership, intellectual property terms, participation rules, and other matters of governance are separate from the OASIS TC Process.
-Contributions made to this TC Open Repository are subject to open source license terms expressed in the BSD-3-Clause License, which was selected as the "Applicable License" when the TC Open Repository was created.
-
-As per "Public Participation Invited," contributions to this OASIS TC Open Repository are welcomed from all parties, whether or not affiliated with OASIS. Participants must have a GitHub account, but no fees or OASIS membership obligations are required. Participation is expected to align with the OASIS TC Open Repository Guidelines and Procedures, the open-source LICENSE designated for this particular repository, and the requirement for an Individual Contributor License Agreement that governs intellectual property.
-
-
-
-
-
 
 Capabilities:
 * Multi-Source Data Integration: The system integrates data from diverse sources, including network logs, STIX/TAXII threat data, and external threat intelligence feeds.
