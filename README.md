@@ -9,7 +9,7 @@ Capabilities:
 * MITRE ATT&CK Mapping: The system can map detected threats to specific MITRE ATT&CK techniques, providing a standardized framework for threat analysis.
 * Threat Actor Identification: It identifies threat actors associated with the detected techniques using STIX/TAXII threat data.
 * Visualization: The system generates graphical representations of detected threats using Matplotlib for better data visualization.
-* AI-Powered Guidance: Through OpenAI's GPT-3 integration, the system provides explanations and guidance to cybersecurity professionals for effective response and mitigation.
+* AI-Powered Guidance: Through OpenAI's GPT-3 integration, the system provides explanations and guidance to cybersecurity professionals for effective incident response and mitigation.
 
 
 
