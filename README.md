@@ -100,5 +100,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 This project uses the STIX2 library for working with STIX/TAXII data.
 It also utilizes the TAXII2Client library for interacting with TAXII servers.
 OpenAI is used for querying explanations and guidance.
-Feel free to customize this README according to the specific details of your project, including installation instructions, examples, and additional sections as needed.
+
 
