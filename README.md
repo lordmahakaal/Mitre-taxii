@@ -1,4 +1,4 @@
-# Mitre-taxii
+# Mitre-taxii-defender
 
 <b>Introduction</b>
 
