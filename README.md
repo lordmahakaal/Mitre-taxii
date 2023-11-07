@@ -1,4 +1,4 @@
-# Mitre-taxii-defender
+# Mitre-taxii-automated-detection
 
 <b>Introduction</b>
 
